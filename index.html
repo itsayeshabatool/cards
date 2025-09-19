@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cards Section</title>
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <style>
+   
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    body {
+      background-color: #f4f4f4;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+    }
+
+    .cards-container {
+      display: flex;
+      gap: 20px;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    .card {
+      background: #fff;
+      padding: 30px 20px;
+      border-radius: 12px;
+      width: 260px;
+      text-align: center;
+      box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+    }
+
+    .card-icon {
+      background-color: #007bff;
+      color: white;
+      font-size: 28px;
+      padding: 15px;
+      border-radius: 8px;
+      display: inline-block;
+      margin-bottom: 15px;
+    }
+
+    .card h3 {
+      margin-bottom: 10px;
+      font-size: 20px;
+      color: #333;
+    }
+
+    .card p {
+      font-size: 14px;
+      color: #666;
+      margin-bottom: 20px;
+    }
+
+    
+    .card hr {
+      border: none;
+      border-top: 2px solid #bbb; /* darker grey + thicker */
+      margin: 20px 0;
+      border-radius: 2px;
+    }
+
+    .card a {
+      display: inline-block;
+      padding: 10px 20px;
+      background-color: #007bff;
+      color: white;
+      text-decoration: none;
+      border-radius: 25px;
+      font-size: 14px;
+      transition: background-color 0.3s ease;
+    }
+
+    .card a:hover {
+      background-color: #0056b3;
+    }
+  </style>
+</head>
+<body>
+  <div class="cards-container">
+    
+   
+    <div class="card">
+      <div class="card-icon"><i class="fas fa-chart-line"></i></div>
+      <h3>Visualize it</h3>
+      <p>Sample text. Click to select the text box. Click again or double click to start editing the text.</p>
+      <hr>
+      <a href="#">read more</a>
+    </div>
+
+   
+    <div class="card">
+      <div class="card-icon"><i class="fas fa-magic"></i></div>
+      <h3>Create it</h3>
+      <p>Sample text. Click to select the text box. Click again or double click to start editing the text.</p>
+      <hr>
+      <a href="#">read more</a>
+    </div>
+
+   
+    <div class="card">
+      <div class="card-icon"><i class="fas fa-chart-bar"></i></div>
+      <h3>Grow it</h3>
+      <p>Sample text. Click to select the text box. Click again or double click to start editing the text.</p>
+      <hr>
+      <a href="#">read more</a>
+    </div>
+
+  </div>
+</body>
+</html>
